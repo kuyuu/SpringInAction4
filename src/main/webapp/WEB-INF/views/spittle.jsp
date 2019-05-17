@@ -9,8 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="<c:url value="resources/style.css" />"/>
 </head>
 <body>
-	<h1>Welcome to Spittr</h1>
-	<a href="<c:url value="/spittles" />">Spittles</a> | 
-	<a href="<c:url value="/spitter/register" />">Register</a>
+	<div class="spittleMessage"><c:out value="${spittle.message}" /></div>
+	<div class="spittleView">
+		<span><c:out value="${spittle.time}" /></span>
+	</div>
 </body>
 </html>
